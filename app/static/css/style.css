@@ -13,6 +13,7 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -148,15 +149,15 @@ div.banner {
 div.content {
   background: #ecf0f1;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
   padding: 10px;
 }
 
-.default {
-  height: 157px;
+.text-default {
+  height: 100%;
   width: 45%;
   margin: 0 auto;
   font-size: 10px;
@@ -169,13 +170,18 @@ div.content {
   -ms-text-shadow: 2px -2px 12px #333333;
   -o-text-shadow: 2px -2px 12px #333333;
   text-shadow: 2px -2px 12px #333333;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
 }
 
 span.text-right {
   float: right;
 }
 
-span.phi {
+span.icon-red {
   font-size: 15px;
   margin: auto 5px;
   color: #e74c3c;
@@ -196,6 +202,12 @@ footer {
   letter-spacing: 1px;
   font-size: 12px;
   margin: 20px auto;
+}
+
+hr.line {
+  border: 1px #e0e0e0 ridge;
+  margin: 0 auto;
+  width: 50%;
 }
 
 span.footer-name {
