@@ -8,4 +8,5 @@ from . import main
 def index():
   request.headers
   # param_post=request.form['form_test']
-  return render_template('index.html', param_get=request.args.get('test'))
+  # request.args.get('test')
+  return render_template('index.html', title='0')

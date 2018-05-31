@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <title>{{ title|safe }} - ˙snɹnɯʎɔ</title>
+    <link rel='stylesheet' href='/static/css/style.css' />
+    <style>
+
+    </style>
+  </head>
+  <body>
+    {% block header %}
+      {% include 'header.html' %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
+      {% include 'footer.html' %}
+    {% endblock %}
+  </body>
+</html>

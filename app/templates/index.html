@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Index</title>
-  <script src="/static/js/test.js"></script>
-</head>
-<body>
-  {{ param_get|safe }}
-  {{ param_post|safe }}
-</body>
-</html>
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="content">
+  <div class="default"><p>
+  &sect;eñor cymurus,
+  <br>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi pariatur tempora, vero. Ipsum soluta error tenetur, reiciendis vel deleniti facilis velit est accusantium. Facere ex necessitatibus iure, est ullam repudiandae.
+  <br>
+  <br>
+  <span class="text-right">tuya siempre, surumyc <span class="phi">&oslash;</span></span>
+  </p></div>
+</div>
+{% endblock %}

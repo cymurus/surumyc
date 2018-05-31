@@ -1,0 +1,203 @@
+/*-------global-------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /*background-color: #7f8c8d;*/
+  background-color: #ecf0f1;
+  font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  /*font-family: "Letter Gothic Std", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";*/
+  /* background-color: #ecf0f1; */
+  /*background-color: #bdc3c7;*/
+  overflow-x: hidden;
+  // overflow-y: hidden;
+  height: 100%;
+  /*overflow-y: hidden;*/
+}
+
+
+/*-------header-------*/
+
+header * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+nav {
+  background: #ecf0f1;
+  height: 70px;
+  width: 100%;
+  right: 0;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+
+nav ul {
+  list-style: none;
+  width: 70%;
+  height: inherit;
+  margin: 0 auto;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 65px;
+  min-width: 100px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+nav ul li span {
+  line-height: inherit;
+  display: inline-block;
+  height: inherit;
+  min-width: inherit;
+  color: #95a5a6;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+nav ul li:hover {
+  /*background: #131313;*/
+}
+
+nav ul li span:hover {
+  color: #2c3e50;
+  /*color: #95a5a6;*/
+  text-decoration: line-through;
+}
+
+span.vert {
+  display: inline-block;
+  line-height: 65px;
+  color: #95a5a6;
+}
+
+
+
+
+/*-------banner-------*/
+
+div.banner {
+  text-align: center;
+  width: 100%;
+  height: 300px;
+  color: #2c3e50;
+  background-image: url(../images/murusb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:flex;
+  display: -webkit-flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.profile {
+  text-align: center;
+}
+
+.head-fucker {
+  margin: 20px auto;
+}
+
+.head {
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+  margin:0px auto; 
+/*  background-image: url(head.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;*/
+}
+
+.sigh {
+  color: #bdc3c7;
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+.darken {
+  color: #7f8c8d;
+}
+
+
+/*-------content-------*/
+
+
+div.content {
+  background: #ecf0f1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.default {
+  height: 157px;
+  width: 45%;
+  margin: 0 auto;
+  font-size: 10px;
+  padding: 20px;
+  /*border: 1px #999999 ridge;*/
+  line-height: 30px;
+  color: #333333;
+  -webkit-text-shadow: 2px -2px 12px #333333;
+  -moz-text-shadow: 2px -2px 12px #333333;
+  -ms-text-shadow: 2px -2px 12px #333333;
+  -o-text-shadow: 2px -2px 12px #333333;
+  text-shadow: 2px -2px 12px #333333;
+}
+
+span.text-right {
+  float: right;
+}
+
+span.phi {
+  font-size: 15px;
+  margin: auto 5px;
+  color: #e74c3c;
+  -webkit-text-shadow: 2px -2px 12px #e74c3c;
+  -moz-text-shadow: 2px -2px 12px #e74c3c;
+  -ms-text-shadow: 2px -2px 12px #e74c3c;
+  -o-text-shadow: 2px -2px 12px #e74c3c;
+  text-shadow: 2px -2px 12px #e74c3c;
+}
+
+/*-------footer-------*/
+
+footer {
+  background: #ecf0f1;
+  color: #95a5a6;
+  /*max-height: 168px;*/
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 20px auto;
+}
+
+span.footer-name {
+ color: #2c3e50;
+}
