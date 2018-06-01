@@ -3,6 +3,7 @@
 
 from flask import render_template, session, redirect, url_for, current_app, request
 from . import main
+from ..models import *
 
 '''
 *********   Page routing   **********
@@ -24,11 +25,26 @@ def list_article():
 @main.route('/article/<string:article_id>', methods=['GET'])
 def list_article_details(article_id):
   # get articles
-  article_name = article_id
   article = {
-    'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?'
+    'title': '蟑螂，杂草，梦想家',
+    # 'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?',
+    'content': '''在黑暗中解一个绳结。我知道哪里有线，但不敢轻举妄动，因为我不知道哪根线会扯上长度未知的、足够消磨完我生命的灾难。
+但很可笑，我还是随便扯了一根。因为在黑暗中，选哪一根并没有区别。
+
+在走投无路时，选择的本身不重要，重要的是我们要能承受选择的结果。
+或者你可以一直僵在黑暗中，拿着那个绳结，等太阳和你和线，一起枯萎。
+又或者你敲碎了自己的脑门，迸出了光，来让你继续解这个绳结。
+蟑螂，杂草，梦想家。
+
+
+
+我没有开灯，继续胡乱解着耳机，困了。
+困了的梦想家，只是一只蟑螂罢了。''',
+    'post_time': '2018-05-29 21:53:13',
+    'mod_time': '2018-06-01 18:00:21',
+    'vp': 1,
   }
-  return render_template('article_details.html', title=article_name, article=article)
+  return render_template('article_details.html', title=article['title'], article=article)
 
 @main.route('/picture', methods=['GET'])
 def list_picture():

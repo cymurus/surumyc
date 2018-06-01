@@ -1,4 +1,4 @@
-/*-------global-------*/
+  /*-------global-------*/
 
 * {
   margin: 0;
@@ -24,9 +24,31 @@ body {
   /* background-color: #ecf0f1; */
   /*background-color: #bdc3c7;*/
   overflow-x: hidden;
-  // overflow-y: hidden;
+  /*overflow-y: hidden;*/
   height: 100%;
   /*overflow-y: hidden;*/
+}
+
+pre {
+  font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+}
+
+/*-------common-------*/
+
+.shadowless {
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  -ms-text-shadow: none;
+  -o-text-shadow: none;
+  text-shadow: none;
+}
+
+.selectable {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+  user-select: text;
 }
 
 
@@ -93,8 +115,10 @@ span.vert {
 
 .nav-item-active {
   text-decoration: line-through;
-  color: #2c3e50;
-  font-size: 15px;
+  color: #e74c3c;
+  font-weight: bold;
+  /*color: #2c3e50;*/
+  /*font-size: 15px;*/
 }
 
 
@@ -166,7 +190,8 @@ div.content {
   height: 100%;
   width: 45%;
   margin: 0 auto;
-  font-size: 10px;
+  font-size: 11px;
+  font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
   padding: 20px;
   /*border: 1px #999999 ridge;*/
   line-height: 30px;
@@ -198,6 +223,10 @@ span.icon-red {
   text-shadow: 2px -2px 12px #e74c3c;
 }
 
+span.icon-l {
+  font-size: 20px;
+}
+
 /*-------footer-------*/
 
 footer {
@@ -218,4 +247,25 @@ hr.line {
 
 span.footer-name {
  color: #2c3e50;
+ text-decoration: line-through;
+}
+
+
+/*-------article-------*/
+
+.article-title {
+  font-size: 16px;
+}
+
+.article-time {
+  display: block;
+  line-height: 10px;
+}
+
+.article-time-post {
+  
+}
+
+.article-time-mod {
+  color: #e74c3c;
 }

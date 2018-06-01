@@ -2,8 +2,14 @@
 
 {% block content %}
 <div class="content">
-  <div class="text-default">{{ article['content'] }}<p>
-  <span class="text-right">tuya siempre, surumyc <span class="icon-red">&oslash;</span></span>
-  </p></div>
+  <div class="text-default">
+    <div class="shadowless article-title">{{ article['title']|escape }}</div>
+    <span class="text-right article-time article-time-mod">&nbsp;/&nbsp;{{ article['mod_time']|escape }}</span>
+    <span class="text-right article-time article-time-post">{{ article['post_time']|escape }}</span>
+    <br/>
+    <pre class="shadowless article-content">{{ article['content']|escape }}</pre>
+    <br/>
+    <p><span class="text-right">/<span class="icon-red icon-l">&oslash;</span></span></p>
+  </div>
 </div>
 {% endblock %}
