@@ -26,20 +26,21 @@ def list_article():
 def list_article_details(article_id):
   # get articles
   article = {
-    'title': '蟑螂，杂草，梦想家',
-    # 'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?',
-    'content': '''在黑暗中解一个绳结。我知道哪里有线，但不敢轻举妄动，因为我不知道哪根线会扯上长度未知的、足够消磨完我生命的灾难。
-但很可笑，我还是随便扯了一根。因为在黑暗中，选哪一根并没有区别。
+    'title': 'Lorem ipsum dolor sit amet',
+    # 'title': '蟑螂，杂草，梦想家',
+    'content': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde odio, inventore earum vel odit rem aliquam minus officia iusto. Ab maxime quis voluptatem soluta, reprehenderit quae possimus, perspiciatis necessitatibus ullam?',
+#     'content': '''在黑暗中解一个绳结。我知道哪里有线，但不敢轻举妄动，因为我不知道哪根线会扯上长度未知的、足够消磨完我生命的灾难。
+# 但很可笑，我还是随便扯了一根。因为在黑暗中，选哪一根并没有区别。
 
-在走投无路时，选择的本身不重要，重要的是我们要能承受选择的结果。
-或者你可以一直僵在黑暗中，拿着那个绳结，等太阳和你和线，一起枯萎。
-又或者你敲碎了自己的脑门，迸出了光，来让你继续解这个绳结。
-蟑螂，杂草，梦想家。
+# 在走投无路时，选择的本身不重要，重要的是我们要能承受选择的结果。
+# 或者你可以一直僵在黑暗中，拿着那个绳结，等太阳和你和线，一起枯萎。
+# 又或者你敲碎了自己的脑门，迸出了光，来让你继续解这个绳结。
+# 蟑螂，杂草，梦想家。
 
 
 
-我没有开灯，继续胡乱解着耳机，困了。
-困了的梦想家，只是一只蟑螂罢了。''',
+# 我没有开灯，继续胡乱解着耳机，困了。
+# 困了的梦想家，只是一只蟑螂罢了。''',
     'post_time': '2018-05-29 21:53:13',
     'mod_time': '2018-06-01 18:00:21',
     'vp': 1,
