@@ -4,8 +4,6 @@
 from datetime import datetime
 import uuid
 
-from .. import db
-
 class Article(object):
 
   def __init__(self, title, content):
@@ -18,4 +16,4 @@ class Article(object):
   def save(self):
     sql = ' insert into article(id, title, content, post_time, mod_time, vp) values (?, ?, ?, ?, ?, ?); '
     params = (uuid.uuid1(), self.title, self.content, self.post_time, self.mod_time, self.vp)
-    
+    db.DbConn.exec(sql, params)
